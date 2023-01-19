@@ -17,6 +17,10 @@ a {
 	color: inherit;
 }
 
+button {
+	border: none;
+}
+
 body {
 	font-family: var(--font-family);
 	color: var(--font-color-primary);
@@ -24,18 +28,23 @@ body {
 
 header {
 	padding: 0 calc(50vw - 590px);
-	padding-top: 30px;
+
 	height: 770px;
 	background-color: #010032;
+	background-image: url('../img/man.png');
+	background-position: right;
+	background-repeat: no-repeat;
 }
 
-.header__wrapper {
+.header__navbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 24px;
 }
 
-.header__wrapper nav {
+.header__navbar nav {
 	display: flex;
 	gap: 40px;
 }
@@ -50,6 +59,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
+	cursor: pointer;
 }
 
 .header__burger span {
@@ -57,4 +67,32 @@ header {
 	height: 2px;
 	background-color: #f1f2f6;
 	border-radius: 20px;
+}
+
+.header__about {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.header__about p:first-of-type {
+	margin: 100px 0 35px 0;
+	font-size: 72px;
+	line-height: 76px;
+}
+
+.header__about p:last-of-type {
+	font-size: 22px;
+	line-height: 34.1px;
+}
+
+.header__about button {
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	gap: 23px;
+	background-color: #ffffff;
+	margin: 25px 0 100px 0;
+	padding: 22px 42px;
+	border-radius: 32px;
 }
